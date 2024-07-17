@@ -21,7 +21,15 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(scrollToPriceInfo, 500); // Scroll after the transition completes
         }
     });
-
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactInfoButton = document.getElementById('contactInfoButton');
+        const footer = document.querySelector('footer');
+    
+    contactInfoButton.addEventListener('click', function() {
+    footer.style.display = 'block';
+        });
+    });
+    
     function scrollToForm() {
         const yOffset = -60;
         const surveyForm = document.getElementById('surveyForm');
