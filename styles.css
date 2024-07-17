@@ -125,6 +125,7 @@ section {
 #form-section {
     background-color: #e0c9a6;
     display: none;
+    margin-bottom: 60px;
 }
 
 #form-section h2 {
@@ -164,6 +165,7 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     bottom: 0;
+    z-index:100;
 }
 
 footer a.facebook-link {
