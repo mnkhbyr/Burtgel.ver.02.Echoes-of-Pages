@@ -163,9 +163,7 @@ footer {
     padding: 5px;
     border: 1px solid #000000;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    bottom: 0;
-    z-index:100;
+    z-index: 100;
 }
 
 footer a.facebook-link {
