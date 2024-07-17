@@ -15,9 +15,9 @@
             <span class="colored-box"></span>
         </div>
         <button id="priceInfoButton" class="price-info-button">Үнийн мэдээлэл</button> <!-- New Button -->
+        <button id="contactInfoButton"class=>Холбоо барих</button>
     </header>
-
-        <section id="price-info-section" style="display: none;">
+    <section id="price-info-section" style="display: none;">
         <h2>Үнийн мэдээлэл болон хичээлийн цаг</h2>
         <p>Манай сургалтын нэг сарын төлбөр 250,000₮</p>
         <p>7 хоногт 3 удаа орох бөгөөд 1 удаагийн хичээлийн цаг 1 цаг 30 мин байна, цагийн хуваариа сурагчид өөрсдөө гаргаж болно.</p>
@@ -34,10 +34,20 @@
         <iframe id="surveyForm" src="https://docs.google.com/forms/d/e/1FAIpQLSeZ2pgH0qMLbxyF6TjpijSx_c0KCNc5B7GhRFp7ed-H4lCAmA/viewform?embedded=true" width="100%" height="909" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </section>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactInfoButton = document.getElementById('contactInfoButton');
+            const footer = document.querySelector('footer');
+
+            contactInfoButton.addEventListener('click', function() {
+                footer.style.display = 'block';
+            });
+        });
+    </script>
 
     <footer>
         <p>Холбоо барих: 80891909</p>
-        <p>email: genroot2671@gmail.com</p>
+        <p>email: bing2671@gmail.com</p>
         <a href="https://www.facebook.com/profile.php?id=61556958508062" class="facebook-link" target="_blank">Facebook дээр биднийг дагаарай</a>
     </footer>
 </body>
