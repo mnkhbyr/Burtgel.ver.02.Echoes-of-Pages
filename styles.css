@@ -16,6 +16,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    
 }
 
 /* Header styles */
@@ -31,7 +32,7 @@ header {
 
 .header-text {
     display: inline-block;
-    animation: slideText 3s infinite;
+    animation: slideText 5s infinite;
 }
 
 .colored-box {
@@ -52,13 +53,25 @@ header {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
 }
-
+#contactInfoButton {
+    position: absolute; /* Change to absolute positioning */
+    bottom: 5px; /* Adjust the bottom position */
+    right: 5px; /* Adjust the left position */
+    background-color: #ffffff;
+    color: #007BFF; /* Change text color to match the header */
+    border: none;
+    padding: 0.5rem 1rem; /* Adjust padding for smaller button */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10; /* Ensure the button is above other elements */
+}
 #price-info-section {
     background-color: #000000;
     color: #ffffff;
     animation: popup 0.5s ease-out;
     transition: height 0.5s ease, max-height 0.5s ease; /* Smooth transition for height and max-height */
-    overflow: auto;
+    overflow: scroll;
 }
 
 /* New Button Styles */
@@ -85,7 +98,7 @@ header {
 section {
     width: 90%;
     max-width: 800px;
-    margin: 0.75rem auto;
+    margin: 2rem auto;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -125,7 +138,7 @@ section {
 #form-section {
     background-color: #e0c9a6;
     display: none;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 #form-section h2 {
@@ -156,6 +169,7 @@ section {
 
 /* Footer styles */
 footer {
+    display: none;  
     background-color: #000000;
     color: #a4a4a4;
     width: 100%;
@@ -168,7 +182,7 @@ footer {
 
 footer a.facebook-link {
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 8px;
     padding: 0.4rem 0.6rem;
     color: white;
     background-color: #3b5998;
