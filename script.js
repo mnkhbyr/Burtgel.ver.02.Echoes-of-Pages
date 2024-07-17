@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const introductionSection = document.getElementById('introduction-section');
     const priceInfoSection = document.getElementById('price-info-section');
     const priceInfoButton = document.getElementById('priceInfoButton'); // Corrected ID
+    const contactInfoButton = document.getElementById('contactInfoButton'); // холбоо барих button
+    const footer = document.getElementById('footer'); // Ensure footer has this ID
 
     showSurveyButton.addEventListener('click', function() {
         introductionSection.classList.add('introduction-small');
@@ -21,15 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(scrollToPriceInfo, 500); // Scroll after the transition completes
         }
     });
-    document.addEventListener('DOMContentLoaded', function() {
-        const contactInfoButton = document.getElementById('contactInfoButton');
-        const footer = document.querySelector('footer');
-    
+
     contactInfoButton.addEventListener('click', function() {
-    footer.style.display = 'block';
-        });
+        footer.scrollIntoView({ behavior: 'smooth' });
     });
-    
+
     function scrollToForm() {
         const yOffset = -60;
         const surveyForm = document.getElementById('surveyForm');
