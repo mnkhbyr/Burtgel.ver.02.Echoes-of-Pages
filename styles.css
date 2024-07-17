@@ -64,8 +64,8 @@ header {
 /* New Button Styles */
 .price-info-button {
     position: absolute; /* Change to absolute positioning */
-    bottom: 10px; /* Adjust the bottom position */
-    left: 10px; /* Adjust the left position */
+    bottom: 0px; /* Adjust the bottom position */
+    left: 5px; /* Adjust the left position */
     background-color: #ffffff;
     color: #007BFF; /* Change text color to match the header */
     border: none;
@@ -168,7 +168,7 @@ footer {
 
 footer a.facebook-link {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 12px;
     padding: 0.5rem 1rem;
     color: white;
     background-color: #3b5998;
@@ -189,7 +189,7 @@ footer a.facebook-link:hover {
 
     /* Adjust the button position on smaller screens */
     .price-info-button {
-        bottom: 10px;
+        bottom: 3px;
         left: 10px; /* Ensure the button stays on the left side */
         width: auto; /* Adjust width for smaller screens */
         padding: 0.5rem; /* Adjust padding for smaller screens */
